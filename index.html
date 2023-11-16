@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Simphwe Nhlanhla Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <!--Boxicons CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-stripe'></i>    
+            <span class="logo_name">Dunga</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-alt'></i>
+                    <span class="link_name">Home</span>     
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <i class='bx bx-user'></i>
+                    <span class="link_name">About</span>     
+                </a>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#Specilization">
+                    <i class='bx bxl-graphql'></i>
+                    <span class="link_name">Services</span>     
+                </a>
+                    <i class='bx bx-chevron-down arrow' ></i> 
+                </div>    
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Services</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Applications</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-book-open' ></i>
+                    <span class="link_name">Education</span>     
+                </a>
+                    <i class='bx bx-chevron-down arrow' ></i> 
+                </div>    
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Education</a></li>
+                    <li><a href="#">University Of<br> Johannesburg</a></li>
+                    <li><a href="#">Mpilisweni S.S</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-contact'></i>
+                    <span class="link_name">Contact</span>     
+                </a>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                    <i class='bx bx-extension'></i>
+                    <span class="link_name">Projects</span>     
+                </a>
+                    <i class='bx bx-chevron-down arrow' ></i> 
+                </div>    
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Projects</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#"> HtmL Aplication<br>Form</a></li>
+                    <li><a href="#">HTML Newspaper<br> Article</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="profile-details">
+            <div class="Profile-content">
+                <img src="./images/Profile.jpg" alt="Profile">
+            </div>
+        <div class="name-job">
+            <div class="profile_name">Simphiwe Dunga</div>
+            <div class="job">Web Developer</div>
+        </div>
+    </div>
+    </nav>
+    <div class="header-text">
+        <p>Hello, I'm <span>S</span>imphiwe <span>D</span>unga</p>
+        <h1><span>D</span>igital <span>D</span>esigner<br>and <span>W</span>eb <span>D</span>eveloper</h1>
+        <div class="Social-media">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+    </div>
+  
+    <!-- -----------about----------- -->
+  <section>
+    <div id="about">
+        <div class="contailer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About <span>Me</span></h1>
+                    <p>Hello everyone, I am Simphiwe Dunga, a web developer who loves to create and beautify websites.
+                    I love<br> making new websites which are easy to use and can be accessed by anyone. I love to have my 
+                    clients<br> happy with the site performance, which they are able to see on their personal devices.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div> 
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/Web Interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Systems Development At BBD</li>
+                        <li><span>2022 - 2023</span><br>End User Trainee At Multichoice</li>
+                        <li><span>2020 - 2022</span><br>Freelancer at Harambee</li>
+                    </ul>
+                </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+  <!-- -----------Specilization----------- -->
+  <section class="Specilization" id="Specilization">
+    <h1 class="Heading">My <span>Services</span></h1>
+
+<div class="services-container"> 
+    <div class="Services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Design</h3>
+        <p>Web design plays a pivotal role in today's digital landscape,<br> where online presence has 
+           become a cornerstone of success for businesses, organisations,<br> and individuals alike. 
+           We build beautiful, fully responsive websites that are SEO friendly and superior in quality.</p>
+        <a href="#" class="btn">Read More</a>  
+        </div>
+        <div class="Services-box">
+        <i class='bx bx-log-in-circle' ></i>
+        <h3>Log in Forms</h3>
+        <p>We have listed our top selected Login/SignUp forms to help you with your websites. These 
+           login and registration forms are all unique.These forms are completely free and highly 
+           flexible that anyone can use in one’s project easily.</p>
+        <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="Services-box">
+        <i class='bx bx-notepad'></i>
+        <h3>Applications</h3>
+        <p>Application forms are critically important to the smooth running of companies, schools,
+           and nonprofits. Jotform simplifies online application forms, whether you need them to 
+           collect information for loans, job applications, scholarships, or even housing. Without 
+           the proper application form, it can be more difficult to complete tasks and collect the 
+           information you need.</p>
+        <a href="#" class="btn">Read More</a>
+        </div>
+</div>                
+  </section>
+
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+   
+</body>
+</html>
