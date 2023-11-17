@@ -32,30 +32,26 @@
                     <a href="#Specilization">
                     <i class='bx bxl-graphql'></i>
                     <span class="link_name">Services</span>     
-                </a>
-                    <i class='bx bx-chevron-down arrow' ></i> 
+                </a> 
                 </div>    
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Services</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Login Form</a></li>
-                    <li><a href="#">Applications</a></li>
-                </ul>
             </li>
             <li>
                 <div class="iocn-link">
-                    <a href="#">
+                    <a href="Education">
                         <i class='bx bx-book-open' ></i>
                     <span class="link_name">Education</span>     
-                </a>
-                    <i class='bx bx-chevron-down arrow' ></i> 
+                </a> 
                 </div>    
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Education</a></li>
-                    <li><a href="#">University Of<br> Johannesburg</a></li>
-                    <li><a href="#">Mpilisweni S.S</a></li>
-                </ul>
             </li>
+			<li>
+                <div class="iocn-link">
+                    <a href="#">
+                    <i class='bx bx-extension'></i>
+                    <span class="link_name">Projects</span>     
+                </a> 
+                </div>    
+                </ul>
+            </li> 
             <li>
                 <div class="iocn-link">
                     <a href="#">
@@ -63,21 +59,7 @@
                     <span class="link_name">Contact</span>     
                 </a>
             </li>
-            <li>
-                <div class="iocn-link">
-                    <a href="#">
-                    <i class='bx bx-extension'></i>
-                    <span class="link_name">Projects</span>     
-                </a>
-                    <i class='bx bx-chevron-down arrow' ></i> 
-                </div>    
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Projects</a></li>
-                    <li><a href="#">Login Form</a></li>
-                    <li><a href="#"> HtmL Aplication<br>Form</a></li>
-                    <li><a href="#">HTML Newspaper<br> Article</a></li>
-                </ul>
-            </li>
+            
         </ul>
         <div class="profile-details">
             <div class="Profile-content">
@@ -146,9 +128,9 @@
     <div class="Services-box">
         <i class='bx bx-code-alt'></i>
         <h3>Web Design</h3>
-        <p>Web design plays a pivotal role in today's digital landscape,<br> where online presence has 
-           become a cornerstone of success for businesses, organisations,<br> and individuals alike. 
-           We build beautiful, fully responsive websites that are SEO friendly and superior in quality.</p>
+        <p>Web design plays a pivotal role in today's<br> digital landscape, where online presence has<br> 
+           become a cornerstone of success for businesses,<br> organisations, and individuals alike. 
+           We build beautiful,<br> fully responsive websites that are SEO friendly<br> and superior in quality.</p>
         <a href="#" class="btn">Read More</a>  
         </div>
         <div class="Services-box">
@@ -171,9 +153,54 @@
         </div>
 </div>                
   </section>
+   <!-- -----------Education----------- -->
+  <section>
+    <div id="Education">
+        <div class="contailer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">My <span>Education</span></h1>
+                    <p>Hello everyone, I am Simphiwe Dunga, a web developer who loves to create and beautify websites.
+                    I love<br> making new websites which are easy to use and can be accessed by anyone. I love to have my 
+                    clients<br> happy with the site performance, which they are able to see on their personal devices.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div> 
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/Web Interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Systems Development At BBD</li>
+                        <li><span>2022 - 2023</span><br>End User Trainee At Multichoice</li>
+                        <li><span>2020 - 2022</span><br>Freelancer at Harambee</li>
+                    </ul>
+                </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
 
     
     <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow. length; i++) { 
+            arrow[i].addEventListener("click", (e)=>{
+           let arrowParent = e.targetElement.parentElement.parentElement;
+           console.log(arrowParent);
+           arrowParent.classList.toggle("showMenu");
+            });
+        }
 
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
