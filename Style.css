@@ -26,6 +26,7 @@ body{
     left: 0;
     height: 100%;
     width: 260px;
+	transition: width 0.2s linear;
     background: rgba(220, 180, 180, 0.1);
 }
 .sidebar .logo-details{
@@ -48,14 +49,12 @@ body{
     font-weight: 600;
 }
 .sidebar .nav-links{
-    
     height: 100%;
     padding-top: 30px;
 }
 .sidebar .nav-links li{
     position: relative;
     list-style: none;
-    transition: all 0.4s ease;
 }
 .sidebar .nav-links li:hover{
     background: #1d1b31;
@@ -91,10 +90,9 @@ body{
     padding: 6px 6px 14px 80px;
     margin-top: -10px;
     background: #1d1b31;
-    /*display: none;*/
 }
 .sidebar .nav-links li.showMenu .sub-menu{
-    display: none;
+    display: block;
 }
 .sidebar .nav-links li .sub-menu a{
     color: #fff;
@@ -102,8 +100,7 @@ body{
     font-size: 15px;
     padding: 5px 0;
     white-space: nowrap;
-    opacity: 0.6;
-    transition: all 0.3 ease;
+   
 }
 .sidebar.close .nav-links li .sub-menu a:hover{
     opacity: 1;
@@ -115,8 +112,6 @@ body{
   margin-top: 0; 
   padding: 10px 20px;
   border-radius: 0 6px 6px 0;
-  transition: all 0.4s ease;
-  opacity: 0;
   pointer-events: none;
 }
 .sidebar.close .nav-links li:hover .sub-menu{
@@ -260,52 +255,205 @@ body{
 .tab-contents.active-tab{
     display: block;
 }
-/*----------------Services------------*/
-.Heading{
+
+/*----------------Education------------*/
+#Education{
+    margin-top: 3.5%;
+    padding: 80px 0px;
+    margin-left: 18%;
+    color: aliceblue;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 37%;
+}
+.about-col-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    color:#fff;
+    text-shadow: 1px 1px 4px #c16868;
+
+}
+.title span{
+    color: #c16868;
+    text-shadow: 1px 1px 4px #c16868;
+
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#c16868;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #c16868;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*----------------Projects------------*/
+#Projects{
+    padding: 2rem 0px;
+    margin-left: 22%;
+}
+.Heading1{
     text-align: center;
     font-size: 50px;
     font-weight: 600;
     color:#fff;
     text-shadow: 1px 1px 4px #c16868;
-    margin-top: 20%;
-    margin-bottom: 8px;
+    margin-bottom: 3rem;
+    
+}
+.Heading1 span{
+    color: #c16868;
+    text-shadow: 1px 1px 4px #c16868
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: tranform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.6), #c16868);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/*----------------Contacts------------*/
+#Contact{
+    padding: 2rem 0px;
     margin-left: 22%;
 }
-.Heading span{
-    color: #c16868;
+.Heading2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color:#fff;
     text-shadow: 1px 1px 4px #c16868;
+    margin-bottom: 3rem;
+    margin-left: 30%;
+    
 }
-.services-container{
+.Heading2 span{
+    color: #c16868;
+    text-shadow: 1px 1px 4px #c16868
+}
+
+
+.container1{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    margin-top: 30px;
+    margin-left: -19%;
 }
-.services-container .Services-box{
-    margin-left: 19%;
-    flex: 1rem;
-    background: #3c3345;
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem;
+.container1 .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
-.services-container  .Services-box a{
-   
+
+.container1 .contactinfo .box{
+    position: relative;
+    padding: 20px;
+    display: flex;
 }
-.btn{
-     display: inline-block;
-     padding: 1rem 2.8rem;
-     margin-top: 8px;
-     color: #c16868;
-     background:#a281c5;
-     border-radius: 4rem;
-     box-shadow: 0 0 1rem (#b729db);
-     color: #ba95ca;
-     letter-spacing: .1rem;
-     font-weight: 600;
+.container1 .contactinfo .box .bx{
+    min-width: 60px;
+    height: 60px;
+    background: #9e9096;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
 }
+.container1 .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #a281c5;
+    flex-direction: column;
+}
+
 
 
 
