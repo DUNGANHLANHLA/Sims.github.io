@@ -260,7 +260,7 @@ body{
 #Education{
     margin-top: 3.5%;
     padding: 80px 0px;
-    margin-left: 18%;
+    margin-left: 20%;
     color: aliceblue;
 }
 .row{
@@ -272,7 +272,7 @@ body{
     flex-basis: 37%;
 }
 .about-col-1 img{
-    width: 100%;
+    width: 90%;
     height: 100%;
     border-radius: 17px;
 
@@ -399,7 +399,7 @@ body{
 /*----------------Contacts------------*/
 #Contact{
     padding: 2rem 0px;
-    margin-left: 22%;
+    margin-left: 34%;
 }
 .Heading2{
     text-align: center;
@@ -422,8 +422,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-left: -19%;
+    margin-top: 15px;
+    margin-left: -18%;
 }
 .container1 .contactinfo{
     width: 50%;
@@ -453,6 +453,66 @@ body{
     color: #a281c5;
     flex-direction: column;
 }
+.container1 h3{
+color: #c16868;
+}
+.ContactForm{
+	width: 100%;
+	margin-left: 80px;
+	padding:40px;
+	background:#9e9096;
+}
+.ContactForm h2{
+	font-size: 24px;
+	text-shadow: 1px 1px 4px #c16868;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.ContactForm .inputBox{
+	position: relative;
+	width:100%;
+	margin-top:10px;
+}
+.ContactForm .inputBox input,
+textarea{
+	width:100%;
+	padding: 5px 0;
+	font-size:16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.ContactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666
+}
+.ContactForm .inputBox input:focus ~ span,
+.ContactForm .inputBox input:valid ~ span,
+.ContactForm .inputBox textarea:focus ~ span,
+.ContactForm .inputBox textarea:focus ~ span{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translate(-20px);
+}
+.ContactForm .inputBox input[type="submit"]{
+	width: 100%;
+	background: #c16868; 
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+
+
+	
+	
 
 
 
