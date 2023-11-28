@@ -9,6 +9,9 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+}
 section{
     height: 100vh;
     scroll-snap-align: start;
@@ -25,9 +28,12 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    width: 260px;
-	transition: width 0.2s linear;
+    width: 110px;
+	transition: width 0.3s ease;
     background: rgba(220, 180, 180, 0.1);
+}
+.sidebar:hover {
+    width: 260px;
 }
 .sidebar .logo-details{
     height: 60px;
@@ -47,6 +53,11 @@ body{
     font-size: 22px;
     color: #fff;
     font-weight: 600;
+    display: none;
+}
+.sidebar:hover .logo-details .logo_name{
+    display: block;
+
 }
 .sidebar .nav-links{
     height: 100%;
@@ -84,8 +95,12 @@ body{
     font-weight: 400;
     color: #fff;
     text-shadow: 1px 1px 4px #c16868;
+    display: none;
 
 } 
+.sidebar:hover .nav-links li a .link_name{
+    display: block;
+}
 .sidebar .nav-links li .sub-menu{
     padding: 6px 6px 14px 80px;
     margin-top: -10px;
@@ -148,7 +163,15 @@ body{
     text-shadow: 1px 1px 4px #c16868;
     font-size: 18px;
     font-weight: 500;
+    display: none;
 
+}
+.sidebar:hover .profile-details .profile_name
+{
+    display: block;
+}
+.sidebar:hover .profile-details .job{
+    display: block;
 }
 .header-text{
     margin-top: 17%;
@@ -164,7 +187,6 @@ body{
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
-    margin-left: 3%;
 }
 .header-text span{
     color: #c16868;
@@ -485,14 +507,16 @@ textarea{
 	resize: none;
 }
 .ContactForm .inputBox span{
-	position: absolute;
-	left: 0;
+
+
 	padding: 5px 0;
 	font-size: 16px;
 	margin: 10px 0;
 	pointer-events: none;
 	transition: 0.5s;
-	color: #666
+	color: #111010;
+    text-shadow: 1px 1px 4px #c16868;
+
 }
 .ContactForm .inputBox input:focus ~ span,
 .ContactForm .inputBox input:valid ~ span,
@@ -509,6 +533,95 @@ textarea{
 	cursor: pointer;
 	padding: 10px;
 	font-size: 18px;
+}
+/*----------------Weather------------*/
+.Heading3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color:#fff;
+    text-shadow: 1px 1px 4px #c16868;
+    margin-top: 30px;
+    margin-bottom: 2rem;
+    
+}
+.Heading3 span{
+    color: #c16868;
+    text-shadow: 1px 1px 4px #c16868
+}
+    .card{
+    width: 100%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #c16868,  #a281c5);
+    color: #fff;
+    margin-left: 80%;
+    padding-top: 3%;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #dfb2c5;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #dfb2c5;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 10px;
+}
+.weather h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
 
 
 	
